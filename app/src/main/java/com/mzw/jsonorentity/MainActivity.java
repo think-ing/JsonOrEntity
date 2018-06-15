@@ -31,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
 
         jsonUtils = new JsonUtils<User>(User.class);
         log_layout = (LinearLayout)findViewById(R.id.id_log_layout);
+
+        //双击清空日志
         log_layout.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
